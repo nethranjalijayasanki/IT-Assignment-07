@@ -1,7 +1,6 @@
 // customer array
 let customer_array = [];
 
-
 const loadCustomerTable = () => {
     $("#customerTableBody").empty();
     customer_array.map((item, index) => {
@@ -33,13 +32,8 @@ $("#customer_add_btn").on("click", function() {
         email: email,
         address: address
     };
-
     customer_array.push(customer);
 
     loadCustomerTable();
-
-    // // create table row
-    // let data = `<tr><td>${first_name}</td><td>${last_name}</td><td>${mobile}</td><td>${email}</td><td>${address}</td></tr>`
-    // $("#customerTableBody").append(data);
 });
 
